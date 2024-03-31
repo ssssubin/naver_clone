@@ -1,0 +1,80 @@
+#bar,
+#pay,
+#talk,
+#noti {
+  width: 38px;
+}
+.top-header {
+  margin: 23px 130px 10px 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header .left {
+  margin: 0;
+}
+.top-header .right {
+  margin: 0;
+}
+.mid-header {
+  margin: 15px 130px 10px 115px;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+}
+#text {
+  padding-left: 3px;
+  line-height: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ff92aa;
+}
+#NAVER {
+  margin-left: 35px;
+  color: #ff92aa;
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 5px;
+}
+#search {
+  margin-left: 40px;
+  border-radius: 30px;
+  border: 1px solid #ff92aa;
+  width: 710px;
+  height: 55px;
+  font-size: 20px;
+  padding-left: 25px;
+  position: relative;
+}
+#search::placeholder {
+  color: #d1d1d1;
+}
+#search_img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 1060px;
+  cursor: pointer;
+}
+.bottom-header {
+  margin: 15px 130px 10px 400px;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 0.5px solid gray;
+  border-radius: 15px;
+  background-color: white;
+  padding: 0;
+  margin-right: 8px;
+}
+button img {
+  width: 40px;
+  height: 47px;
+  cursor: pointer;
+}
