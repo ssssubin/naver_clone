@@ -1,0 +1,127 @@
+#main-container .main-article {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+.main-article.left {
+  width: 60%;
+  margin-top: 0;
+}
+.main-article.right {
+  width: 40%;
+  margin-top: 0;
+}
+
+#elice_logo {
+  width: 835px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.right .right__user {
+  width: 89.7%;
+  height: 107px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: none;
+  margin-left: 30px;
+  display: flex;
+}
+.right .right__user-info {
+  width: 90%;
+  height: 53px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right__user-info.mail,
+.right__user-info.cafe,
+.right__user-info.blog,
+.right__user-info.pay {
+  width: 100%;
+  margin: 0;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+.right__user-info.pay {
+  border-right: 1px solid var(--border-color);
+  border-bottom-right-radius: 10px;
+}
+.right__user-info.mail {
+  border-bottom-left-radius: 10px;
+}
+
+#user-profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#user-profile-div {
+  width: 80px;
+  height: 87px;
+  padding: 20px 12px 0 15px;
+}
+.user_info {
+  padding-top: 23px;
+  width: 100%;
+}
+
+#id {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#user-email {
+  margin-top: 10px;
+  font-size: 12px;
+}
+#membership {
+  margin-top: 9px;
+  width: 70px;
+  height: 17px;
+  font-size: 10px;
+  border-radius: 0;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  background-color: white;
+}
+.user_info__bottom {
+  display: flex;
+  width: 100%;
+}
+#note,
+#bean {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin: 12px 0 0 10px;
+}
+#note:hover,
+#bean:hover {
+  text-decoration-line: underline;
+}
+#bean {
+  margin-left: 5px;
+  border-left: 1px solid var(--border-color);
+  padding-left: 5px;
+}
+
+#logout {
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+  margin: 20px 10px 0 0;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+#logout:hover {
+  background-color: #f5f7f8;
+}

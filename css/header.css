@@ -3,12 +3,15 @@
 #talk,
 #noti {
   width: 38px;
+  height: 40px;
+  cursor: pointer;
 }
-.top-header {
-  margin: 23px 130px 10px 115px;
+.header-article .top-header {
+  /* margin: 23px 130px 10px 115px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .top-header .left {
   margin: 0;
@@ -17,35 +20,23 @@
   margin: 0;
 }
 .mid-header {
-  margin: 15px 130px 10px 115px;
+  margin: 9px 130px 10px 115px;
   display: flex;
   justify-self: start;
   align-items: center;
 }
-#text {
-  padding-left: 3px;
-  line-height: 15px;
-  font-size: 11px;
-  font-weight: bold;
-  color: #ff92aa;
-}
-#NAVER {
-  margin-left: 35px;
-  color: #ff92aa;
-  font-weight: bold;
-  font-size: 32px;
-  padding-bottom: 5px;
-}
+
 #search {
-  margin-left: 40px;
+  margin-left: 177px;
   border-radius: 30px;
-  border: 1px solid #ff92aa;
-  width: 710px;
+  border: 1px solid var(--main-color);
+  width: 685px;
   height: 55px;
   font-size: 20px;
-  padding-left: 25px;
+  padding-left: 20px;
   position: relative;
 }
+
 #search::placeholder {
   color: #d1d1d1;
 }
@@ -53,28 +44,30 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  left: 1060px;
+  left: 69vw;
+  right: 30%;
   cursor: pointer;
 }
 .bottom-header {
-  margin: 15px 130px 10px 400px;
+  margin: 10px 130px 10px 315px;
   display: flex;
   justify-self: start;
   align-items: center;
 }
 
-button {
-  width: 50px;
-  height: 50px;
+ul button {
+  width: 45px;
+  height: 45px;
   text-align: center;
-  border: 0.5px solid gray;
+  font-size: 13px;
+  border: 1px solid gray;
   border-radius: 15px;
   background-color: white;
   padding: 0;
   margin-right: 8px;
 }
-button img {
-  width: 40px;
-  height: 47px;
+ul button img {
+  width: 35px;
+  height: 37px;
   cursor: pointer;
 }
