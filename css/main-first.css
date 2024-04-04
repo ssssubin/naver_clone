@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   min-height: 100vh;
-  margin-top: 70px;
+  margin-top: 55px;
 }
 .main-article.left {
   width: 60%;
@@ -28,11 +28,13 @@
   background-color: none;
   margin-left: 30px;
   display: flex;
+  position: relative;
 }
 .right .right__user-info {
   width: 90%;
   height: 53px;
   margin-left: 30px;
+  border-top: 0px solid var(--border-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +43,7 @@
 .right__user-info.cafe,
 .right__user-info.blog,
 .right__user-info.pay {
+  background-color: #fafbfd;
   width: 100%;
   margin: 0;
   border-left: 1px solid var(--border-color);
@@ -113,15 +116,26 @@
 }
 
 #logout {
-  width: 200px;
-  height: 35px;
+  width: 170px;
+  height: 40px;
   border-radius: 20px;
-  margin: 20px 10px 0 0;
+  margin: 20px 20px 0 0;
   background-color: white;
   border: 1px solid var(--border-color);
   cursor: pointer;
+  padding-left: 10px;
+  text-align: start;
+  color: #747474;
 }
 
 #logout:hover {
   background-color: #f5f7f8;
+}
+#logout-img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 360px;
+  cursor: pointer;
 }

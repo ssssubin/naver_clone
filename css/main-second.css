@@ -75,8 +75,118 @@
   text-decoration-line: underline;
 }
 .left__second .left__second-third {
-  width: 100px;
+  box-sizing: border-box;
+  display: flex;
+}
+.news-div {
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+  width: 100%;
+  height: 50px;
   border: 1px solid var(--border-color);
-  padding: 20px;
-  border-radius: 5px;
+  cursor: pointer;
+}
+.news-div:hover {
+  background-color: blue;
+  color: white;
+}
+.left__third {
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#left-btn,
+#right-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+#left-btn {
+  position: absolute;
+  left: 300px;
+  top: 10px;
+  padding-right: 8px;
+}
+#right-btn {
+  position: absolute;
+  top: 10px;
+  left: 495px;
+  padding-left: 8px;
+}
+#left-btn:hover,
+#right-btn:hover {
+  background-color: #f5f7f8;
+}
+.right .right__second {
+  box-sizing: border-box;
+  width: 408.337px;
+  height: 250px;
+  margin: 10px 0 0 30px;
+  padding: 20px 15px 20px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #747474;
+  border: 1px solid var(--border-color);
+}
+.right__second-first {
+  display: block;
+  color: black;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration-line: none;
+}
+#son {
+  margin: 0 10px 10px 0px;
+  width: 180px;
+  border-radius: 10px;
+}
+.right__second-second {
+  display: flex;
+}
+.right__second-second p {
+  padding-top: 15px;
+  font-size: 13px;
+  color: black;
+}
+.right__second-third {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#son_record,
+#son_cheering {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 50%;
+  padding-top: 15px;
+  color: black;
+  text-decoration-line: none;
+  height: 40px;
+}
+#son_record {
+  border-right: 1px solid var(--border-color);
 }
