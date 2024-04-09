@@ -384,8 +384,8 @@
   justify-content: center;
   align-items: center;
 }
-#third-left-btn,
-#third-right-btn {
+#third-bottom-left-btn,
+#third-bottom-right-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -397,19 +397,19 @@
   text-align: center;
   padding-top: 3px;
 }
-#third-left-btn {
+#third-bottom-left-btn {
   position: absolute;
   left: 290px;
   top: 10px;
   padding-right: 8px;
 }
-#third-right-btn {
+#third-bottom-right-btn {
   position: absolute;
   top: 10px;
   left: 505px;
   padding-left: 8px;
 }
-#third-left-btn:hover,
-#third-right-btn:hover {
+#third-bottom-left-btn:hover,
+#third-bottom-right-btn:hover {
   background-color: #f5f7f8;
 }
