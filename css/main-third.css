@@ -109,6 +109,7 @@
 }
 .left__third-first-right {
   display: flex;
+  margin-right: 9px;
 }
 .left__third-first-right div {
   padding: 10px 13px 0 0;
@@ -160,6 +161,7 @@
 .left__third-second .left .first .first-second,
 .left__third-second .left .first .first-third {
   display: flex;
+  width: 234.1px;
 }
 .left__third-second .left .first .first-first,
 .left__third-second .left .first .first-second {
