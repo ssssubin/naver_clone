@@ -75,11 +75,9 @@
   text-decoration-line: underline;
 }
 .left__second .left__second-third {
-  box-sizing: border-box;
   display: flex;
 }
 .news-div {
-  box-sizing: border-box;
   text-align: center;
   font-weight: bold;
   padding-top: 15px;
@@ -93,7 +91,6 @@
   color: white;
 }
 .left__second-bottom {
-  box-sizing: border-box;
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
