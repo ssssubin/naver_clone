@@ -452,11 +452,12 @@
                 <img id="info" src="/assets/info.svg" alt="info" />
               </div>
               <div class="right">
-                <p>04.11. 22:04</p>
+                <p id="date"></p>
                 <img
                   id="arrow-path"
                   src="/assets/arrow-path.svg"
                   alt="arrow-path"
+                  onclick="RefreshDate()"
                 />
               </div>
             </div>
@@ -471,5 +472,6 @@
         </div>
       </article>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>
