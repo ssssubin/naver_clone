@@ -10,4 +10,49 @@ function RefreshDate() {
   date.innerText = `${month}.${currentDate}. ${hour}:${min}`;
 }
 
+const leftBtn = document.querySelector("#left-btn");
+const div = document.querySelector(".left__second-bottom div");
+let count = 1;
+function leftBtnOnClick() {
+  if (count === 1) div.innerText = `언론사 더보기 1/4`;
+  else {
+    count -= 1;
+    div.innerText = `언론사 더보기 ${count}/4`;
+  }
+}
+
+const rightBtn = document.querySelector("#right-btn");
+function rightBtnOnClick() {
+  if (count === 4) {
+    div.innerText = `언론사 더보기 4/4`;
+  } else {
+    count += 1;
+    console.log(count);
+    div.innerText = `언론사 더보기 ${count}/4`;
+  }
+}
+
+const shopLeftBtn = document.querySelector("#third-bottom-left-btn");
+let shopCount = 1;
+const shopDiv = document.querySelector(".left__third-bottom div");
+function shopLeftBtnOnClick() {
+  if (shopCount === 1) shopDiv.innerText = `쇼핑아이템 더보기 1/4`;
+  else {
+    shopCount -= 1;
+    shopDiv.innerText = `쇼핑아이템 더보기 ${shopCount}/4`;
+  }
+}
+
+const shopRightBtn = document.querySelector("#third-bottom-right-btn");
+function shopRightBtnOnClick() {
+  if (shopCount === 4) shopDiv.innerText = `쇼핑아이템 더보기 4/4`;
+  else {
+    shopCount += 1;
+    shopDiv.innerText = `쇼핑아이템 더보기 ${shopCount}/4`;
+  }
+}
+leftBtn.addEventListener("click", leftBtnOnClick);
+rightBtn.addEventListener("click", rightBtnOnClick);
+shopLeftBtn.addEventListener("click", shopLeftBtnOnClick);
+shopRightBtn.addEventListener("click", shopRightBtnOnClick);
 window.onload = RefreshDate();
