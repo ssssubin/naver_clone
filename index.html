@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NAVER</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <section id="main-container">
@@ -13,17 +13,17 @@
           <div class="top-header__left">
             <img
               id="bar"
-              src="/assets/bar.svg"
+              src="./assets/bar.svg"
               alt="bar"
               style="margin-right: 17px"
             />
-            <img id="pay" src="/assets/pay.svg" alt="pay" />
+            <img id="pay" src="./assets/pay.svg" alt="pay" />
           </div>
           <div class="top-header__right">
-            <img id="talk" src="/assets/talk.svg" alt="talk" />
+            <img id="talk" src="./assets/talk.svg" alt="talk" />
             <img
               id="noti"
-              src="/assets/noti.svg"
+              src="./assets/noti.svg"
               alt="noti"
               style="margin-left: 17px"
             />
@@ -36,66 +36,111 @@
             type="text"
             placeholder="검색어를 입력해 주세요."
           />
-          <img id="search_img" src="/assets/search.svg" alt="search" />
+          <img id="search_img" src="./assets/search.svg" alt="search" />
         </div>
         <div class="bottom-header">
           <ul>
             <button>
-              <img src="/assets/email.svg" alt="email" />
+              <img src="./assets/email.svg" alt="email" />
               <p>메일</p>
             </button>
             <button>
-              <img src="/assets/cafe.svg" alt="cafe" />
+              <img src="./assets/cafe.svg" alt="cafe" />
               <p>카페</p>
             </button>
             <button>
-              <img src="/assets/blog.svg" alt="blog" />
+              <img src="./assets/blog.svg" alt="blog" />
               <p>블로그</p>
             </button>
             <button>
-              <img src="/assets/shopping.svg" alt="shopping" />
+              <img src="./assets/shopping.svg" alt="shopping" />
               <p>쇼핑</p>
             </button>
             <button>
-              <img src="/assets/news.svg" alt="news" />
+              <img src="./assets/news.svg" alt="news" />
               <p>뉴스</p>
             </button>
             <button>
-              <img src="/assets/securities.svg" alt="securities" />
+              <img src="./assets/securities.svg" alt="securities" />
               <p>증권</p>
             </button>
             <button>
-              <img src="/assets/estate.svg" alt="estate" />
+              <img src="./assets/estate.svg" alt="estate" />
               <p>부동산</p>
             </button>
             <button>
-              <img src="/assets/map.svg" alt="map" />
+              <img src="./assets/map.svg" alt="map" />
               <p>지도</p>
             </button>
             <button>
-              <img src="/assets/webtoon.svg" alt="webtoon" />
+              <img src="./assets/webtoon.svg" alt="webtoon" />
               <p>웹툰</p>
             </button>
             <button>
-              <img src="/assets/chiziziq.svg" alt="chiziziq" />
+              <img src="./assets/chiziziq.svg" alt="chiziziq" />
               <p>치지직</p>
             </button>
             <button>
-              <img src="/assets/etc.svg" alt="etc" />
+              <img src="./assets/etc.svg" alt="etc" />
             </button>
           </ul>
         </div>
       </article>
       <article class="main-article">
         <div class="left">
-          <div class="left__first">
-            <a href="https://elice.training/track/iot" target="_blank">
-              <img
-                id="elice_logo"
-                src="/assets/elice_logo.png"
-                alt="엘리스 로고"
-              />
-            </a>
+          <div id="left__first">
+            <ul class="slides">
+              <li>
+                <a href="https://elice.training/track/iot" target="_blank">
+                  <img
+                    class="slide"
+                    id="elice_logo"
+                    src="./assets/elice_logo.png"
+                    alt="엘리스 로고"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://elice.training/track/sw" target="_blank">
+                  <img
+                    class="slide"
+                    id="elice_FE"
+                    src="./assets/elice_FE.png"
+                    alt="elice_FE"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://elice.training/track/ai" target="_blank">
+                  <img
+                    class="slide"
+                    src="./assets/elice_AI.png"
+                    alt="elice_AI"
+                    id="elice_AI"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://elice.training/track/cloud" target="_blank">
+                  <img
+                    class="slide"
+                    src="./assets/elice_Cloud.png"
+                    alt="elice_Cloud"
+                    id="elice_Cloud"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://elice.training/track/iot" target="_blank">
+                  <img
+                    class="slide"
+                    id="elice_logo"
+                    src="./assets/elice_logo.png"
+                    alt="엘리스 로고"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="left__second">
             <div class="left__second-first">
@@ -248,26 +293,26 @@
                       href="https://shopping.naver.com/home"
                       target="_blank"
                       ><div>
-                        <img src="/assets/shopping.svg" alt="쇼핑홈" /></div
+                        <img src="./assets/shopping.svg" alt="쇼핑홈" /></div
                     ></a>
                     <a
                       id="review"
                       href="https://shopping.naver.com/my/writable-reviews"
                       target="_blank"
-                      ><div><img src="/assets/review.svg" alt="리뷰" /></div>
+                      ><div><img src="./assets/review.svg" alt="리뷰" /></div>
                     </a>
                     <a
                       id="order"
                       href="https://new-m.pay.naver.com/pcpay?serviceCategory=SHOPPING"
                       target="_blank"
-                      ><div><img src="/assets/order.svg" alt="주문" /></div>
+                      ><div><img src="./assets/order.svg" alt="주문" /></div>
                     </a>
                     <a
                       id="shopping-cart"
                       href="https://shopping.naver.com/cart"
                       target="_blank"
                       ><div>
-                        <img src="/assets/shopping-cart.svg" alt="장바구니" />
+                        <img src="./assets/shopping-cart.svg" alt="장바구니" />
                       </div>
                     </a>
                   </div>
@@ -347,7 +392,7 @@
             <div id="user-profile-div">
               <img
                 id="user-profile"
-                src="/assets/gromit.png"
+                src="./assets/gromit.png"
                 alt="사용자 프로필 사진"
               />
             </div>
@@ -363,7 +408,7 @@
               </div>
             </div>
             <button id="logout">로그아웃</button>
-            <img id="logout-img" src="/assets/logout.svg" alt="logout" />
+            <img id="logout-img" src="./assets/logout.svg" alt="logout" />
           </div>
           <div class="right__user-info">
             <div class="right__user-info mail">메일</div>
@@ -379,7 +424,7 @@
               >손흥민(NO.7)</a
             >
             <div class="right__second-second">
-              <img id="son" src="/assets/son.jpg" alt="손흥민" />
+              <img id="son" src="./assets/son.jpg" alt="손흥민" />
               <p>
                 출생: 1992. 7. 8<br /><br />
                 신체: 183cm, 77kg<br /><br />
@@ -416,7 +461,7 @@
                   id="weather1-a"
                   href="https://weather.naver.com/today/05200118?cpName=KMA"
                   target="_blank"
-                  ><img id="weather1" src="/assets/weather1.png" alt="날씨1"
+                  ><img id="weather1" src="./assets/weather1.png" alt="날씨1"
                 /></a>
                 <a
                   id="weather2-a"
@@ -425,7 +470,7 @@
                 >
                   <img
                     id="weather2"
-                    src="/assets/weather2.png"
+                    src="./assets/weather2.png"
                     alt="weather2"
                   />
                 </a>
@@ -438,7 +483,7 @@
                 >
                   <img
                     id="weather3"
-                    src="/assets/weather3.png"
+                    src="./assets/weather3.png"
                     alt="weather3"
                   />
                 </a>
@@ -449,20 +494,20 @@
             <div class="first">
               <div class="left">
                 <a href="https://finance.naver.com/" target="_blank">증시</a>
-                <img id="info" src="/assets/info.svg" alt="info" />
+                <img id="info" src="./assets/info.svg" alt="info" />
               </div>
               <div class="right">
                 <p id="date"></p>
                 <img
                   id="arrow-path"
-                  src="/assets/arrow-path.svg"
+                  src="./assets/arrow-path.svg"
                   alt="arrow-path"
                   onclick="RefreshDate()"
                 />
               </div>
             </div>
             <div class="second">
-              <img src="/assets/stock.png" alt="stock" />
+              <img src="./assets/stock.png" alt="stock" />
               <div class="right">
                 <p>관심 종목이 없습니다.<br />새로운 종목을 추가해 보세요!</p>
                 <button id="add-btn">+</button>

@@ -51,6 +51,29 @@ function shopRightBtnOnClick() {
     shopDiv.innerText = `쇼핑아이템 더보기 ${shopCount}/4`;
   }
 }
+
+// slide
+let slider = document.querySelector("#left__first");
+let slides = slider.querySelector(".slides");
+let slide = slides.querySelectorAll(".slide");
+let currentSlide = 0;
+
+setInterval(function () {
+  let from = -(835 * currentSlide);
+  let to = from - 835;
+  slides.animate(
+    { marginLeft: [from + "px", to + "px"] },
+    {
+      duration: 1000,
+      easing: "ease",
+      iterations: 1,
+      fill: "both",
+    }
+  );
+  currentSlide++;
+  if (currentSlide === slide.length - 1) currentSlide = 0;
+}, 5000);
+
 leftBtn.addEventListener("click", leftBtnOnClick);
 rightBtn.addEventListener("click", rightBtnOnClick);
 shopLeftBtn.addEventListener("click", shopLeftBtnOnClick);

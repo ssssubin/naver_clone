@@ -13,7 +13,18 @@
   margin-top: 0;
 }
 
-#elice_logo {
+#left__first {
+  width: 835px;
+  height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#left__first .slides {
+  width: 8000px;
+  height: 100%;
+}
+#left__first .slide {
+  float: left;
   width: 835px;
   height: 130px;
   border-radius: 10px;
