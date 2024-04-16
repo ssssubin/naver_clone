@@ -52,27 +52,33 @@ function shopRightBtnOnClick() {
   }
 }
 
-// slide
+// slide 구현
 let slider = document.querySelector("#left__first");
-let slides = slider.querySelector(".slides");
-let slide = slides.querySelectorAll(".slide");
+let slide = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
 setInterval(function () {
-  let from = -(835 * currentSlide);
-  let to = from - 835;
-  slides.animate(
-    { marginLeft: [from + "px", to + "px"] },
+  // 서서히 이미지가 보이도록 하는 애니메이션
+  slider.animate(
     {
-      duration: 1000,
-      easing: "ease",
-      iterations: 1,
-      fill: "both",
+      opacity: [0, 1],
+    },
+    {
+      duration: 5000,
+      easing: "ease-in-out",
     }
   );
+
   currentSlide++;
-  if (currentSlide === slide.length - 1) currentSlide = 0;
-}, 5000);
+  // active 클래스는 화면에 보이도록 하는 클래스
+  slide[currentSlide - 1].classList.remove("active"); //이전 슬라이드의 active class 삭제
+  slide[currentSlide].classList.add("active"); // 현재 슬라이드에 active class 추가
+
+  if (currentSlide === slide.length - 1) {
+    //현재 슬라이드가 마지막 슬라이드가 됐을 때 초기화
+    currentSlide = 0;
+  }
+}, 15000);
 
 leftBtn.addEventListener("click", leftBtnOnClick);
 rightBtn.addEventListener("click", rightBtnOnClick);

@@ -19,15 +19,16 @@
   border-radius: 10px;
   overflow: hidden;
 }
-#left__first .slides {
-  width: 8000px;
-  height: 100%;
-}
+
 #left__first .slide {
+  display: none;
   float: left;
   width: 835px;
   height: 130px;
   border-radius: 10px;
+}
+#left__first .active {
+  display: block;
 }
 
 .right .right__user {
