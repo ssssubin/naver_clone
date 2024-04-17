@@ -14,3 +14,12 @@
   min-height: 100vh;
   margin: 20px auto;
 }
+
+.search {
+  display: block;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid var(--main-color);
+  top: 0px;
+}
