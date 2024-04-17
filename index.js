@@ -80,6 +80,28 @@ setInterval(function () {
   }
 }, 15000);
 
+// 스크롤 내리면 특정 지점에서 검색어창도 따라 내려오도록 하는 코드
+const fixSearch = document.querySelector(".fixedDiv");
+const fixP = document.querySelector(".fixedDiv p");
+const fixInput = document.querySelector(".fixedDiv input");
+const fixImg = document.querySelector(".fixedDiv img");
+window.addEventListener("scroll", function () {
+  let scrollY = this.scrollY; //현재 스크롤 위치 (Y좌표)
+  if (scrollY >= 267) {
+    fixSearch.classList.remove("hidden");
+    fixP.classList.remove("hidden");
+    fixInput.classList.remove("hidden");
+    fixImg.classList.remove("hidden");
+    fixSearch.classList.add("search");
+  } else {
+    fixSearch.classList.add("hidden");
+    fixP.classList.add("hidden");
+    fixImg.classList.add("hidden");
+    fixInput.classList.add("hidden");
+    fixSearch.classList.remove("search");
+  }
+});
+
 leftBtn.addEventListener("click", leftBtnOnClick);
 rightBtn.addEventListener("click", rightBtnOnClick);
 shopLeftBtn.addEventListener("click", shopLeftBtnOnClick);
