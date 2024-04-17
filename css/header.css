@@ -90,3 +90,43 @@ ul button img {
 ul button p {
   margin-top: 5px;
 }
+
+.hidden {
+  display: none;
+}
+.fixedDiv {
+  width: 100vw;
+  height: 55px;
+  padding-left: 110px;
+  padding-top: 10px;
+  background-color: white;
+}
+.fixedDiv > p {
+  padding-top: 5px;
+  width: 35px;
+  color: var(--main-color);
+  font-size: 35px;
+  font-weight: bolder;
+}
+.fixedDiv > input {
+  margin-left: 5px;
+  border: none;
+  width: 685px;
+  height: 35px;
+  font-size: 20px;
+  padding-top: 9px;
+}
+.fixedDiv > input::placeholder {
+  color: #d1d1d1;
+}
+.fixedDiv > input:focus {
+  outline: none;
+}
+.fixedDiv > img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 920px;
+  top: 20px;
+  cursor: pointer;
+}
